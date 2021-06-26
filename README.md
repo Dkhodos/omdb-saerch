@@ -1,5 +1,3 @@
-# omdb-search
-
 # OMDB Search
 - A React, Typescript & MaterialUI project.
 - Powered by Vite ;)
