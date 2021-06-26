@@ -1,9 +1,12 @@
 {
   "version": "0.0.0",
+  "homepage": "https://dkhodos.github.io/omdb-search",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",

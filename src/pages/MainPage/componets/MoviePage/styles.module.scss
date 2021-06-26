@@ -1,0 +1,41 @@
+.modal {
+  min-width: min(820px, calc(100vw - 64px));
+  min-height: min(480px, calc(100vh - 44px));
+
+  .movie {
+    main {
+      display: flex;
+    }
+
+    .imageWrapper {
+      width: 40%;
+      margin-right: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      width: 60%;
+
+      label {
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      small {
+        font-size: 16px;
+        display: block;
+        color: #36393f;
+      }
+    }
+
+    article {
+      max-width: 500px;
+      max-height: 395px;
+      overflow: auto;
+    }
+  }
+}

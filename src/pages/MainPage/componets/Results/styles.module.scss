@@ -1,0 +1,52 @@
+@use "../../../../index";
+
+$desktop-product-per-row: 5;
+$tablet-product-per-row: 4;
+$mobile-product-per-row: 3;
+
+
+.results {
+  header {
+    position: relative;
+    top: 0;
+    height: 60px;
+    transition: .2s all ease-in-out;
+    margin: 40px 60px;
+  }
+
+  &.noSearch {
+    header {
+      height: 100%;
+      margin: 40px 120px;
+      top: calc(50vh / 2);
+    }
+  }
+
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat($desktop-product-per-row, 1fr);
+    margin: 0 60px;
+
+    @include index.for-tablet-only {
+      grid-template-columns: repeat($tablet-product-per-row, 1fr);
+    }
+
+    @include index.for-mobile-only {
+      grid-template-columns: repeat($mobile-product-per-row, 1fr);
+    }
+
+    @include index.for-small-mobile-only{
+      grid-template-columns: repeat($mobile-product-per-row - 1, 1fr);
+    }
+  }
+
+  .error{
+    margin: 20px 60px;
+
+    ul{
+      padding: 0;
+    }
+  }
+
+}

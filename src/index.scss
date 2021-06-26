@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+$popup-background-dark: #36393f;
+$button-blue: hsl(235, calc(51.4%), 52.4%);
+
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin for-small-mobile-only {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+
+@mixin for-mobile-only {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Assistant', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-size: cover;
+}

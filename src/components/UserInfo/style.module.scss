@@ -1,0 +1,21 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  .info{
+    text-align: left;
+  }
+
+  .title{
+    font-weight: bold;
+    display: block;
+  }
+
+  .delete {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

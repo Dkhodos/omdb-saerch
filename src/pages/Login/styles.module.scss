@@ -1,0 +1,19 @@
+@use "../../index";
+
+.title {
+  @include index.flexbox;
+}
+
+.login {
+  .input {
+    margin-bottom: 10px !important;
+    width: 50%;
+  }
+
+  small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #36393f;
+  }
+}
