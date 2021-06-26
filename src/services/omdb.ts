@@ -1,7 +1,7 @@
 import {Client} from "../utils/Client";
 import {API_KEY} from "../consts";
 
-const API_URL = "http://www.omdbapi.com/"
+const API_URL = "https://www.omdbapi.com/"
 
 interface SearchResponse {
     Response: "True" | "False"
